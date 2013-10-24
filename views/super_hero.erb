@@ -1,0 +1,33 @@
+<head>
+  <link rel="stylesheet" href="../public/bootstrap.min.css" type="text/css">
+</head>
+<body>
+  <form action='/team' method="POST">
+    <br><br>
+    <div class="container">
+    <h3> Team </h3>
+    <label for="name">Team Name:</label>
+    <input id="name" type="text" name="team[name]">
+    <label for="motto">Team Motto:</label>
+    <input id="motto" type="text" name="team[motto]">
+    <br>
+    <h3>Hero 1</h3><br>
+    <label for="name">Hero Name:</label>
+    <input id="name" type="text" name="team[hero][1][name]">
+    <label for="power">Heros Power:</label>
+    <input id="power" type="text" name="team[hero][1][power]">
+    <label for="bio">Heros Biography:</label>
+    <input id="bio" type="text" name="team[hero][1][bio]">
+    <br>
+    <h3>Hero 2</h3><br>
+    <label for="name">Hero Name:</label>
+    <input id="name" type="text" name="team[hero][2][name]">
+    <label for="power">Heros Power:</label>
+    <input id="power" type="text" name="team[hero][2][power]">
+    <label for="bio">Heros Biography:</label>
+    <input id="bio" type="text" name="team[hero][2][bio]"><br>
+    <input type="submit" value="make 'em">
+</div>
+</body>
+</html>
+  

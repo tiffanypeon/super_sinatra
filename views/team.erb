@@ -1,0 +1,21 @@
+<head>
+  <link rel="stylesheet" href="../public/bootstrap.min.css" type="text/css">
+</head>
+<body>
+  <br><br>
+  <div class="container">
+    <% @team.each do |team| %> 
+      <h2> Team name: <%= team.name %> </h2>
+      <h3> Team motto: <%= team.motto %> </h3>
+      <p>
+      <% team.hero.each do |hero| %>
+      <h3> Hero name: <%= hero.name %> </h3> 
+      <p> Hero superpower: <%= hero.power %> </p>
+      <p> Hero bio: <%= hero.bio %> </p>
+      <br><br>
+    <% end %> 
+    <% end %> 
+  </div>
+</body>
+
+
